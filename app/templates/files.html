@@ -26,7 +26,7 @@
 <div class="image-grid">
     {% for image in images %}
         <div class="image-item">
-            <img src="{{ url_for('get_image', filename=image) }}" alt="{{ image }}">
+            <img src="../static/{{ url_for('get_image', filename=image) }}" alt="{{ image }}">
 
             <!-- {% set image_url = url_for('get_image', filename=image) %}
             <p>{{ image_url }}</p>  {# Debugging: Print the image URL #}
